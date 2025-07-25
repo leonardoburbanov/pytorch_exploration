@@ -1,0 +1,16 @@
+[project]
+name = "pytorch-exploration"
+version = "0.1.0"
+description = "PyTorch exploration project with CUDA support. PyTorch packages installed via: uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ipykernel>=6.30.0",
+]
+
+[project.optional-dependencies]
+cuda = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0", 
+    "torchaudio>=2.0.0",
+]
